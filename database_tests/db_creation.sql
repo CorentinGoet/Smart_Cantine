@@ -47,3 +47,7 @@ VALUES (1, CURRENT_TIMESTAMP, 15), (1, CURRENT_TIMESTAMP, 19), (2, CURRENT_TIMES
 SELECT * FROM mesures;
 SELECT niveau_sonore, date_mesure, type_capteur 
 FROM mesures as m JOIN capteurs as c ON m.id_capteur = c.id_capteur;
+
+-- Creation d'un profil pour l'accès à la base de données
+create user 'website'@'localhost' identified by 'webpass';
+GRANT SELECT on *.*  to 'website'@'localhost';

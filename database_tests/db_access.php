@@ -18,7 +18,7 @@
         <?php
             $conn = mysqli_connect("localhost", "website", "webpass", "test_db");
             // checking if connection failed
-            if ($conn ->connect_error){
+            if ($conn->connect_error){
                 die("Connection failed".£conn->connect_error);
             }
 

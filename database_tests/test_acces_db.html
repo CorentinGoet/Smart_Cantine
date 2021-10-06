@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Test d'accès à la base de données</title>
+    </head>
+    <body>
+        <p>
+            Ceci est un test de connection à la base de données.
+        </p>
+        <script>
+            // importation du module msql
+            let mysql = require('mysql');
+
+
+            // connection
+            let connection = mysql.createConnection({
+                host: 'localhost',
+                user: 'root',
+                password: 'shw96ZWZS@',
+                database: 'todoapp'
+            });
+
+            connection.connect(function(err) {
+                if (err) {
+                return print('error: ' + err.message);
+                }
+            
+                print('Connected to the MySQL server.');
+            });
+        </script>
+    </body>
+</html>

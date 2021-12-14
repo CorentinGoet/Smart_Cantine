@@ -131,3 +131,11 @@ li {
    border-radius: 10px ; 
     box-shadow: 0 0 5px rgba(20, 109, 109, 0.836); */
 }
+.graph_1 {
+
+    position: initial;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: auto;
+}
